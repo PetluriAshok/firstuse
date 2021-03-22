@@ -6,6 +6,7 @@ import javax.print.DocFlavor.STRING;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.javatpoint.bean.Mobilespecs;
@@ -36,5 +37,14 @@ public class HelloWorldController {
 
 		return details;
 
+	}
+	public Mobilespecs addspecs(@RequestParam("mobilename") String mobilename,@RequestParam("mobile_specs") String mobile_specs ) {
+		
+		
+		
+		
+		
+		return null;
+		
 	}
 }

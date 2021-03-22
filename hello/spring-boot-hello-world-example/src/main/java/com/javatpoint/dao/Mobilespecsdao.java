@@ -13,6 +13,10 @@ import com.javatpoint.utilityes.MobileRowmapper;
 public class Mobilespecsdao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
+	
+	
+	@Autowired
+	private Mobilespecs mobilespecs;
 
 	public Mobilespecsdao(JdbcTemplate jdbcTemplate) {
 		super();
@@ -24,6 +28,16 @@ public class Mobilespecsdao {
 		String sql = "select * from  mobilespecs";
 
 		return jdbcTemplate.query(sql, new MobileRowmapper());
+
+	}
+	
+	public String additem( String mobilename ,String mobile_specs ) {
+		
+		String sql = "insert into mobiilespecs(mobilename,mobile_specs) values(?,?)";
+				//jdbcTemplate.update(sql, mobilespecs.get ,mobile_specs);
+		
+		
+		return "ygfuygih";
 
 	}
 
