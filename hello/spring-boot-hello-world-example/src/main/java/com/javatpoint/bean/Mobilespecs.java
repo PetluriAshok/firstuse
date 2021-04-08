@@ -5,15 +5,18 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
-
+import org.springframework.context.annotation.Bean;
 
 @XmlRootElement
 public class Mobilespecs {
 
-
 	private String mobilename;
 
 	public String mobile_specs;
+
+	public Mobilespecs() {
+
+	}
 
 	public String getMobilename() {
 		return mobilename;
