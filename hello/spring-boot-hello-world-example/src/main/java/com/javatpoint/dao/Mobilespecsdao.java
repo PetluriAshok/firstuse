@@ -17,8 +17,7 @@ public class Mobilespecsdao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
-//	@Autowired
-//	private MobilespecsRepository mobilespecsRepository;
+
 
 
 	public Mobilespecsdao(JdbcTemplate jdbcTemplate) {
@@ -35,11 +34,6 @@ public class Mobilespecsdao {
 	}
 
 
-//	public String additem(String mobilename, String mobilespecs) {
-//		return mobilespecsRepository.save(mobilename,mobilespecs) ;
-//
-//		
-//
-//	}
+
 
 }

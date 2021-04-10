@@ -14,7 +14,8 @@ public class MobileDaoImpl {
 	private Mobilespecsdao mobilespecsdao;
 
 	public List<Mobilespecs> getspecs() {
-		return mobilespecsdao.getspecs();
+		
+	return mobilespecsdao.getspecs();
 
 	}
 

@@ -2,6 +2,7 @@ package com.javatpoint.controller;
 
 import java.util.List;
 
+
 import javax.print.DocFlavor.STRING;
 import javax.validation.Valid;
 
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.javatpoint.bean.Mobilespecs;
-import com.javatpoint.bean.MobilespecsDto;
 import com.javatpoint.dao.MobileDaoImpl;
 
 
@@ -22,9 +22,6 @@ public class HelloWorldController {
 
 	@Autowired
 	private MobileDaoImpl mobileDaoImpl;
-
-//	@Autowired
-//	private MobilespecsRepository mobilespecsRepository;
 
 	@RequestMapping("/")
 	public String hello() {
@@ -47,12 +44,4 @@ public class HelloWorldController {
 
 	}
 
-//	@RequestMapping(value = "/addmobile", method = RequestMethod.POST)
-//	public MobilespecsDto addspecs(@Valid @RequestBody MobilespecsDto mobilespecs) {
-//
-//		MobilespecsDto mobilespecs2 = mobilespecsRepository.save(mobilespecs);
-//
-//		return mobilespecs2;
-//
-//	}
 }
